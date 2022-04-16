@@ -1,0 +1,44 @@
+main {
+  flex-grow: 4.5;
+  flex-shrink: 2;
+  flex-basis: 300px;
+  padding: 1rem;
+}
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+div.dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0;
+  align-content: center;
+}
+
+.details {
+  flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 280px;
+  padding-left: 2rem;
+}
+
+main ul {
+  padding: 0;
+}
+
+div.dates > span.start-date,
+div.dates > span.end-date {
+  flex-grow: 2;
+  flex-shrink: 0.7;
+  flex-basis: 4rem;
+  padding: 0;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+$blue: #002e58;
+$blue-dark: #00315c;
+$blue-light: #003d73;
+$gray: #eeeeee;
+$gray-dark: #cccccc;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.resume {
+  width: clamp(300px, 100%, 768px);
+  display: flex;
+  justify-content: center;
+  background-color: $gray;
+  flex-wrap: wrap;
+}

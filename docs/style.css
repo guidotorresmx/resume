@@ -1,0 +1,137 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.resume {
+  width: clamp(300px, 100%, 768px);
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex-grow: 1;
+  flex-shrink: 0.5;
+  flex-basis: 200px;
+  background-color: #003d73;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+aside :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+}
+
+aside :is(h1, h2, h3, h4, h5, h6) {
+  background-color: #003d73;
+  padding-right: 1rem;
+}
+
+aside :is(h3) {
+  background-color: #00315c;
+}
+
+.right {
+  text-align: right;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul > li::before {
+  content: "•";
+}
+
+aside ul > li {
+  color: white;
+  padding-right: 0.5rem;
+  font-style: italic;
+  font-weight: 200;
+  display: inline-block;
+}
+
+aside ul#programming > li {
+  display: block;
+  color: white;
+  padding-top: 0.5rem;
+}
+
+aside ul#programming > li > dt {
+  display: block;
+}
+
+aside ul#programming > li > dd {
+  display: inline-flex;
+  padding: 0%;
+  margin: 0 0 3px 3px;
+  padding-right: 10px;
+  border-right: solid 1px;
+}
+
+main {
+  flex-grow: 4.5;
+  flex-shrink: 2;
+  flex-basis: 300px;
+  padding: 1rem;
+}
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+div.dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0;
+  align-content: center;
+}
+
+.details {
+  flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 280px;
+  padding-left: 2rem;
+}
+
+main ul {
+  padding: 0;
+}
+
+div.dates > span.start-date,
+div.dates > span.end-date {
+  flex-grow: 2;
+  flex-shrink: 0.7;
+  flex-basis: 4rem;
+  padding: 0;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

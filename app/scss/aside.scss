@@ -1,0 +1,68 @@
+$blue: #002e58;
+$blue-dark: #00315c;
+$blue-light: #003d73;
+$gray: #eeeeee;
+$gray-dark: #cccccc;
+
+aside {
+  flex-grow: 1;
+  flex-shrink: 0.5;
+  flex-basis: 200px;
+  background-color: $blue-light;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+aside :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+}
+
+aside :is(h1, h2, h3, h4, h5, h6) {
+  background-color: $blue-light;
+  padding-right: 1rem;
+}
+aside :is(h3) {
+  background-color: $blue-dark;
+}
+
+.right {
+  text-align: right;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul > li::before {
+  content: "•";
+}
+
+aside ul > li {
+  color: white;
+  padding-right: 0.5rem;
+  font-style: italic;
+  font-weight: 200;
+  display: inline-block;
+}
+
+aside ul#programming > li {
+  display: block;
+  color: white;
+  padding-top: 0.5rem;
+}
+
+aside ul#programming > li > dt {
+  display: block;
+}
+
+aside ul#programming > li > dd {
+  display: inline-flex;
+  padding: 0%;
+  margin: 0 0 3px 3px;
+  padding-right: 10px;
+  border-right: solid 1px;
+}
