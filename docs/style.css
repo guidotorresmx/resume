@@ -43,7 +43,7 @@ aside :is(h1, h2, h3, h4, h5, h6) {
   color: white;
 }
 
-aside :is(h1, h2, h3, h4, h5, h6) {
+aside :is(h1, h2, h6) {
   background-color: #003d73;
   padding-right: 1rem;
 }
@@ -76,6 +76,17 @@ aside ul#programming > li {
   display: block;
   color: white;
   padding-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+aside ul#programming > li:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px #ffffff;
+}
+
+.highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px #ffffff;
 }
 
 aside ul#programming > li > dt {
@@ -101,6 +112,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+.structure:hover,
+.summary:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px #002e58;
 }
 
 div.dates {
@@ -133,5 +150,45 @@ div.dates > span.end-date {
   flex-basis: 4rem;
   padding: 0;
   text-align: center;
+}
+
+main h2 {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+}
+
+main h4 {
+  margin: 0;
+  padding: 0;
+}
+
+div.details ul {
+  padding: 0;
+  margin: 0;
+}
+
+.summary p {
+  margin: 0;
+  padding: 0;
+}
+
+.details p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 em {
+  font-weight: normal;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */

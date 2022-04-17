@@ -3,6 +3,7 @@ $blue-dark: #00315c;
 $blue-light: #003d73;
 $gray: #eeeeee;
 $gray-dark: #cccccc;
+$white: #ffffff;
 
 aside {
   flex-grow: 1;
@@ -21,7 +22,7 @@ aside :is(h1, h2, h3, h4, h5, h6) {
   color: white;
 }
 
-aside :is(h1, h2, h3, h4, h5, h6) {
+aside :is(h1, h2, h6) {
   background-color: $blue-light;
   padding-right: 1rem;
 }
@@ -53,6 +54,17 @@ aside ul#programming > li {
   display: block;
   color: white;
   padding-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+aside ul#programming > li:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px $white;
+}
+
+.highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px $white;
 }
 
 aside ul#programming > li > dt {
