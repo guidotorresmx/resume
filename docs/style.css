@@ -38,6 +38,7 @@ aside {
 
 aside :is(h1, h2, h3, h4, h5, h6) {
   margin: 0;
+  padding: 0;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: white;
@@ -58,6 +59,7 @@ aside :is(h3) {
 
 aside ul {
   list-style: none;
+  padding: 0;
 }
 
 aside ul > li::before {
