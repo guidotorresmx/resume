@@ -84,6 +84,7 @@ div.details ul {
 .summary p {
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
 
 .details p {
@@ -94,4 +95,10 @@ div.details ul {
 h3 em {
   font-weight: normal;
   font-size: 0.9rem;
+}
+
+.details span,
+.details li,
+.details p {
+  text-align: justify !important;
 }
