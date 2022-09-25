@@ -1,14 +1,14 @@
 //based on https://github.com/thecodercoder/gulp-browsersync/blob/main/gulpfile.js
 
-import gulp from "gulp"
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
+import gulp from "gulp";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
 const sass = gulpSass(dartSass);
 
 import terser from "gulp-terser";
 import pug from "gulp-pug";
 import image from "gulp-image";
-import {create as bsCreate} from 'browser-sync';
+import { create as bsCreate } from "browser-sync";
 const browserSync = bsCreate();
 
 const src = gulp.src;
@@ -32,15 +32,15 @@ function pugTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src("app/js/script.js", { sourcemaps: true, allowEmpty: true })
-    //.pipe(terser())
-    .pipe(dest("docs/js", { sourcemaps: "." }));
+  return (
+    src("app/js/script.js", { sourcemaps: true, allowEmpty: true })
+      //.pipe(terser())
+      .pipe(dest("docs/js", { sourcemaps: "." }))
+  );
 }
 
-function imgTask(){
-  return src('app/images/*')
-  .pipe(image())
-  .pipe(dest('docs/assets'))
+function imgTask() {
+  return src("app/images/*").pipe(image()).pipe(dest("docs/assets"));
 }
 
 // Browsersync Tasks
