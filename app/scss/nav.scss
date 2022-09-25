@@ -1,3 +1,6 @@
+#download {
+  transition: top 0.7s;
+}
 #navbar {
   z-index: 5;
   width: 100%;
@@ -89,10 +92,6 @@ section .ptemp {
   width: 100vw;
 }
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
 
 .icon {
   color: white;

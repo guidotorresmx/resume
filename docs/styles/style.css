@@ -22,6 +22,20 @@ body {
   justify-content: center;
 }
 
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+a:link, a:visited {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
 .resume {
   width: clamp(300px, 100%, 768px);
   display: flex;
@@ -51,9 +65,24 @@ aside :is(h1, h2, h3, h4, h5, h6) {
 aside :is(h1, h2, h6) {
   background-color: #003d73;
   padding-right: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+section.summary > div > h5 {
+  text-align: justify;
+}
+
+aside :is(h4, h5) {
+  background-color: #003d73;
+  font-weight: 300;
+  padding-right: 1rem;
+  font-size: 1.25rem;
 }
 
 aside :is(h3) {
+  font-size: 1.25;
+  font-weight: 300;
   background-color: #00315c;
 }
 
@@ -86,13 +115,15 @@ aside ul#programming > li {
 }
 
 aside ul#programming > li:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 16px -3px #ffffff;
+  transform: scaleY(1.015);
+  box-shadow: 1px 1px 16px -3px #ffffff;
+  transition: all 0.3s;
 }
 
 .highlight:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 16px -3px #ffffff;
+  transform: scaleY(1.015);
+  box-shadow: 1px 1px 16px -3px #ffffff;
+  transition: all 0.3s;
 }
 
 aside ul#programming > li > dt {
@@ -124,6 +155,7 @@ main {
 .summary:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 16px -3px #002e58;
+  transition: all 0.3s;
 }
 
 div.dates {
@@ -165,28 +197,25 @@ main h2 {
   padding-bottom: 0.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 main h3 {
   margin: 0;
   padding: 0;
+  font-weight: 300;
   padding-top: 0.5rem;
 }
 
 main h4 {
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
 div.details ul {
   padding: 0;
   margin: 0;
-}
-
-.summary p {
-  margin: 0;
-  padding: 0;
-  text-align: justify;
 }
 
 .details p {
@@ -203,6 +232,10 @@ h3 em {
 .details li,
 .details p {
   text-align: justify !important;
+}
+
+#download {
+  transition: top 0.7s;
 }
 
 #navbar {
@@ -293,11 +326,6 @@ section .ptemp {
   width: 100vw;
 }
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
 .icon {
   color: white;
   font-size: 1.5em;
@@ -313,10 +341,30 @@ footer p {
   text-align: center;
 }
 
+#footer {
+  background-color: black;
+}
+
 #page-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   background-color: black;
+  transition: top 0.3s;
+}
+
+#page-container-and-footer {
+  background-color: black;
+  transition: top 0.3s;
+  position: relative;
+  min-height: 100vh;
+}
+
+#download {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
 }
 
 .sticky {

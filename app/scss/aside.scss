@@ -26,8 +26,25 @@ aside :is(h1, h2, h3, h4, h5, h6) {
 aside :is(h1, h2, h6) {
   background-color: $blue-light;
   padding-right: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
+
+
+section.summary > div > h5{
+  text-align: justify;
+}
+
+aside :is(h4, h5) {
+  background-color: $blue-light;
+  font-weight: 300;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+
 aside :is(h3) {
+  font-size: 1.25;
+  font-weight: 300;
   background-color: $blue-dark;
 }
 
@@ -60,13 +77,15 @@ aside ul#programming > li {
 }
 
 aside ul#programming > li:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 16px -3px $white;
+  transform: scaleY(1.015);
+  box-shadow: 1px 1px 16px -3px $white;
+  transition: all .3s
 }
 
 .highlight:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 16px -3px $white;
+  transform: scaleY(1.015);
+  box-shadow: 1px 1px 16px -3px $white;
+  transition: all .3s
 }
 
 aside ul#programming > li > dt {

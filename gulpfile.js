@@ -43,6 +43,11 @@ function imgTask() {
   return src("app/images/*").pipe(image()).pipe(dest("docs/assets"));
 }
 
+function assetsTask(){
+  return gulp.src('app/assets/*')
+    .pipe(gulp.dest('docs/assets'));
+}
+
 // Browsersync Tasks
 function browsersyncServe(cb) {
   browserSync.init({
