@@ -8,3 +8,4 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-74px";
   }
 }
+//# sourceMappingURL=script.js.map

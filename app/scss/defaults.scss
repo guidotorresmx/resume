@@ -4,6 +4,8 @@ $blue-dark: #00315c;
 $blue-light: #003d73;
 $gray: #eeeeee;
 $gray-dark: #cccccc;
+$resume-bg: $gray;
+$bg: black;
 
 html {
   box-sizing: border-box;
@@ -17,17 +19,21 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #000;
+  transition:all 1s;
+}
+
+#page-container {
+  display: flex;
+  justify-content: center;
 }
 
 .resume {
   width: clamp(300px, 100%, 768px);
   display: flex;
   justify-content: center;
-  background-color: $gray;
+  background-color: $resume-bg;
   flex-wrap: wrap;
 }

@@ -1,19 +1,26 @@
 //based on https://github.com/thecodercoder/gulp-browsersync/blob/main/gulpfile.js
 
-const { src, dest, watch, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-const postcss = require("gulp-postcss");
-const cssnano = require("cssnano");
-const terser = require("gulp-terser");
-const pug = require("gulp-pug");
+import gulp from "gulp"
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 
-const browsersync = require("browser-sync").create();
+import terser from "gulp-terser";
+import pug from "gulp-pug";
+import image from "gulp-image";
+import {create as bsCreate} from 'browser-sync';
+const browserSync = bsCreate();
+
+const src = gulp.src;
+const dest = gulp.dest;
+const watch = gulp.watch;
+const series = gulp.series;
 
 // Sass Task
 function scssTask() {
   return src("app/scss/style.scss", { sourcemaps: true, allowEmpty: true })
     .pipe(sass())
-    .pipe(dest("docs", { sourcemaps: "." }));
+    .pipe(dest("docs/styles", { sourcemaps: "." }));
 }
 
 // Pug Task
@@ -26,13 +33,19 @@ function pugTask() {
 // JavaScript Task
 function jsTask() {
   return src("app/js/script.js", { sourcemaps: true, allowEmpty: true })
-    .pipe(terser())
-    .pipe(dest("docs", { sourcemaps: "." }));
+    //.pipe(terser())
+    .pipe(dest("docs/js", { sourcemaps: "." }));
+}
+
+function imgTask(){
+  return src('app/images/*')
+  .pipe(image())
+  .pipe(dest('docs/assets'))
 }
 
 // Browsersync Tasks
 function browsersyncServe(cb) {
-  browsersync.init({
+  browserSync.init({
     server: {
       baseDir: "docs",
     },
@@ -41,7 +54,7 @@ function browsersyncServe(cb) {
 }
 
 function browsersyncReload(cb) {
-  browsersync.reload();
+  browserSync.reload();
   cb();
 }
 
@@ -55,10 +68,11 @@ function watchTask() {
 }
 
 // Default Gulp task
-exports.default = series(
+export default series(
   scssTask,
   jsTask,
   pugTask,
+  imgTask,
   browsersyncServe,
   watchTask
 );
