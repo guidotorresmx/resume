@@ -327,17 +327,6 @@ section .ptemp {
   width: 100vw;
 }
 
-.icon {
-  color: white;
-  font-size: 1.5em;
-  padding: 1.5rem 0.4rem 0.4rem 0.4rem;
-}
-
-.icon:hover {
-  font-size: 2em;
-  padding: 1rem 0.3rem 0.3rem 0.3rem;
-}
-
 footer p {
   text-align: center;
 }
@@ -395,5 +384,15 @@ footer p {
   position: static;
   white-space: normal;
   width: auto;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5em;
+  padding: 1.5rem 0.4rem 0.4rem 0.4rem;
+}
+
+.icon:hover {
+  color: #F58A78;
 }
 /*# sourceMappingURL=style.css.map */

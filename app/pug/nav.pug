@@ -1,11 +1,14 @@
 
 nav#navbar.navbar.navbar-expand-lg.navbar-dark.container-fluid()
+
   img.img-fluid.rounded.float-start(src='./assets/logo-rounded.svg' alt='logo' onerror="this.onerror=null;this.src='./assets/img/logo-rounded.svg';")
   a.navbar-brand(href='../') guidotorresmx
-  button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+  button.navbar-toggler.justify-content-right(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
+
   #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.me-auto.mb-2.mb-lg-0
+
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0.align-items-center
       li.nav-item
         a.nav-link(href='../blog/') Blog
       li.nav-item
@@ -14,7 +17,30 @@ nav#navbar.navbar.navbar-expand-lg.navbar-dark.container-fluid()
         a.nav-link(href='../resume') Resume
       li.nav-item
         a.nav-link(href='../react-recipes/') Recipes demo
-    form.d-flex
-      input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-      button.btn.btn-outline-success(type='submit')
-        | Search
+
+    ul.navbar-nav.ms-auto.mb-2.mb-lg-0.flex-wrap
+      .btn-group(role='group' aria-label="First group")
+        // Twitter
+        button.btn.btn-secondary.btn-sm(title='twitter' onclick="location.href='//twitter.com/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-twitter.icon
+        // Github
+        button.btn.btn-secondary.btn-sm(title='github' onclick="location.href='//github.com/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-github.icon
+        // Ins
+        button.btn.btn-secondary.btn-sm(title='instagram' onclick="location.href='//www.instagram.com/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-instagram.icon
+        // Linkedin
+        button.btn.btn-secondary.btn-sm(title='linkedin' onclick="location.href='//www.linkedin.com/in/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-linkedin.icon
+        // Facebook
+        button.btn.btn-secondary.btn-sm(title='facebook' onclick="location.href='//www.facebook.com/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-facebook.icon
+        // Mail
+        button.btn.btn-secondary.btn-sm(title='mail' onclick="location.href='mailto:marco@guidotorres.mx'")
+          i.my-1.py-1.fa.fa-solid.fa-envelope-open.icon
+        // Whatsapp
+        button.btn.btn-secondary.btn-sm(title='whatsapp' onclick="location.href='//wa.me/16479066194'")
+          i.my-1.py-1.fa.fa-brands.fa-whatsapp.icon
+        // Telegram
+        button.btn.btn-secondary.btn-sm(title='telegram' onclick="location.href='//t.me/guidotorresmx'")
+          i.my-1.py-1.fa.fa-brands.fa-telegram.icon

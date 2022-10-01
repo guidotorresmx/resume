@@ -17,18 +17,34 @@
   </head>
   <body>       
     <nav class="navbar navbar-expand-lg navbar-dark container-fluid" id="navbar"><img class="img-fluid rounded float-start" src="./assets/logo-rounded.svg" alt="logo" onerror="this.onerror=null;this.src='./assets/img/logo-rounded.svg';"><a class="navbar-brand" href="../">guidotorresmx</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler justify-content-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="../blog/about/">About</a></li>
           <li class="nav-item"><a class="nav-link" href="../resume">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="../react-recipes/">Recipes demo</a></li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap">
+          <div class="btn-group" role="group" aria-label="First group">
+            <!-- Twitter-->
+            <button class="btn btn-secondary btn-sm" title="twitter" onclick="location.href='//twitter.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-twitter icon"></i></button>
+            <!-- Github-->
+            <button class="btn btn-secondary btn-sm" title="github" onclick="location.href='//github.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-github icon"></i></button>
+            <!-- Ins-->
+            <button class="btn btn-secondary btn-sm" title="instagram" onclick="location.href='//www.instagram.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-instagram icon"></i></button>
+            <!-- Linkedin-->
+            <button class="btn btn-secondary btn-sm" title="linkedin" onclick="location.href='//www.linkedin.com/in/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-linkedin icon"></i></button>
+            <!-- Facebook-->
+            <button class="btn btn-secondary btn-sm" title="facebook" onclick="location.href='//www.facebook.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-facebook icon"></i></button>
+            <!-- Mail-->
+            <button class="btn btn-secondary btn-sm" title="mail" onclick="location.href='mailto:marco@guidotorres.mx'"><i class="my-1 py-1 fa fa-solid fa-envelope-open icon"></i></button>
+            <!-- Whatsapp-->
+            <button class="btn btn-secondary btn-sm" title="whatsapp" onclick="location.href='//wa.me/16479066194'"><i class="my-1 py-1 fa fa-brands fa-whatsapp icon"></i></button>
+            <!-- Telegram-->
+            <button class="btn btn-secondary btn-sm" title="telegram" onclick="location.href='//t.me/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-telegram icon"></i></button>
+          </div>
+        </ul>
       </div>
     </nav>
     <div id="page-container-and-footer">
@@ -244,17 +260,19 @@
         </article>
       </div>
       <footer class="footer is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif" id="footer">
-        <div class="d-flex flex-column bd-highlight mb-3 justify-content-evenly min-100">
-          <div class="container"><span class="text-muted">
-              <p><a title="twitter" href="//twitter.com/guidotorresmx"><i class="fa fa-brands fa-twitter icon"></i></a>
-                <!-- Github--><a title="github" href="//github.com/guidotorresmx"><i class="fa fa-brands fa-github icon"></i></a>
-                <!-- Ins--><a title="instagram" href="//www.instagram.com/guidotorresmx"><i class="fa fa-brands fa-instagram icon"></i></a>
-                <!-- Linkedin--><a title="linkedin" href="//www.linkedin.com/in/guidotorresmx"><i class="fa fa-brands fa-linkedin icon"></i></a>
-                <!-- Facebook--><a title="facebook" href="//www.facebook.com/guidotorresmx"><i class="fa fa-brands fa-facebook icon"></i></a>
-                <!-- Mail--><a title="mail" href="mailto:marco@guidotorres.mx"><i class="fa fa-solid fa-envelope-open icon"></i></a>
-                <!-- Whatsapp--><a title="whatsapp" href="//wa.me/16479066194"><i class="fa fa-brands fa-whatsapp icon"></i></a>
-                <!-- Telegram--><a title="telegram" href="//t.me/guidotorresmx"><i class="fa fa-brands fa-telegram icon"></i></a><br>2022. guidotorresmx. All rights unreserved. Created by <a href="https://github.com/guidotorresmx">@guidotorresmx</a>. Source code can be found at <a href="https://github.com/guidotorresmx/resume">@guidotorresmx/resume</a> This website uses Pug, Sass and Gulp.
-              </p></span></div>
+        <div class="d-flex flex-column bd-highlight pt-2 mt-2 justify-content-evenly min-100">
+          <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-0"><a title="twitter" href="//twitter.com/guidotorresmx"><i class="fa fa-brands fa-twitter icon"></i></a>
+              <!-- Github--><a title="github" href="//github.com/guidotorresmx"><i class="fa fa-brands fa-github icon"></i></a>
+              <!-- Ins--><a title="instagram" href="//www.instagram.com/guidotorresmx"><i class="fa fa-brands fa-instagram icon"></i></a>
+              <!-- Linkedin--><a title="linkedin" href="//www.linkedin.com/in/guidotorresmx"><i class="fa fa-brands fa-linkedin icon"></i></a>
+              <!-- Facebook--><a title="facebook" href="//www.facebook.com/guidotorresmx"><i class="fa fa-brands fa-facebook icon"></i></a>
+              <!-- Mail--><a title="mail" href="mailto:marco@guidotorres.mx"><i class="fa fa-solid fa-envelope-open icon"></i></a>
+              <!-- Whatsapp--><a title="whatsapp" href="//wa.me/16479066194"><i class="fa fa-brands fa-whatsapp icon"></i></a>
+              <!-- Telegram--><a title="telegram" href="//t.me/guidotorresmx"><i class="fa fa-brands fa-telegram icon"></i></a>
+            </ul>
+            <p class="text-center text-muted"><br>2022. guidotorresmx. All rights unreserved. Created by <a href="https://github.com/guidotorresmx">@guidotorresmx</a>. Source code can be found at <a href="https://github.com/guidotorresmx/resume">@guidotorresmx/resume</a> This website uses Pug, Sass and Gulp.</p>
+          </div>
         </div>
       </footer>
     </div>
