@@ -239,6 +239,16 @@ h3 em {
   transition: top 0.7s;
 }
 
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 1s;
+}
+
 #navbar {
   z-index: 5;
   width: 100%;
@@ -246,10 +256,10 @@ h3 em {
   position: fixed;
   --bs-bg-opacity: 0.65;
   background-color: black;
-  top: -74px;
+  transition: all 1s;
 }
 
-#navbar > img {
+#logo {
   height: 50px;
 }
 
@@ -336,7 +346,6 @@ footer p {
 }
 
 #page-container {
-  padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -348,7 +357,6 @@ footer p {
   background-color: black;
   transition: top 0.3s;
   position: relative;
-  min-height: 100vh;
 }
 
 #download {

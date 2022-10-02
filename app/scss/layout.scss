@@ -1,5 +1,4 @@
 #page-container {
-  padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -11,7 +10,6 @@
   background-color: black;
   transition: top .3s;
   position: relative;
-  min-height: 100vh;
 }
 
 #download {

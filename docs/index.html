@@ -16,35 +16,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
   </head>
   <body>       
-    <nav class="navbar navbar-expand-lg navbar-dark container-fluid" id="navbar"><img class="img-fluid rounded float-start" src="./assets/logo-rounded.svg" alt="logo" onerror="this.onerror=null;this.src='./assets/img/logo-rounded.svg';"><a class="navbar-brand" href="../">guidotorresmx</a>
-      <button class="navbar-toggler justify-content-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="../blog/about/">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="../resume">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="../react-recipes/">Recipes demo</a></li>
-        </ul>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap">
-          <div class="btn-group" role="group" aria-label="First group">
-            <!-- Twitter-->
-            <button class="btn btn-secondary btn-sm" title="twitter" onclick="location.href='//twitter.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-twitter icon"></i></button>
-            <!-- Github-->
-            <button class="btn btn-secondary btn-sm" title="github" onclick="location.href='//github.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-github icon"></i></button>
-            <!-- Ins-->
-            <button class="btn btn-secondary btn-sm" title="instagram" onclick="location.href='//www.instagram.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-instagram icon"></i></button>
-            <!-- Linkedin-->
-            <button class="btn btn-secondary btn-sm" title="linkedin" onclick="location.href='//www.linkedin.com/in/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-linkedin icon"></i></button>
-            <!-- Facebook-->
-            <button class="btn btn-secondary btn-sm" title="facebook" onclick="location.href='//www.facebook.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-facebook icon"></i></button>
-            <!-- Mail-->
-            <button class="btn btn-secondary btn-sm" title="mail" onclick="location.href='mailto:marco@guidotorres.mx'"><i class="my-1 py-1 fa fa-solid fa-envelope-open icon"></i></button>
-            <!-- Whatsapp-->
-            <button class="btn btn-secondary btn-sm" title="whatsapp" onclick="location.href='//wa.me/16479066194'"><i class="my-1 py-1 fa fa-brands fa-whatsapp icon"></i></button>
-            <!-- Telegram-->
-            <button class="btn btn-secondary btn-sm" title="telegram" onclick="location.href='//t.me/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-telegram icon"></i></button>
-          </div>
-        </ul>
+    <nav class="autohide navbar navbar-expand-lg navbar-dark container-fluid fixed-top scrolled-up" id="navbar">
+      <div class="container-fluid"><img class="img-fluid rounded float-start" src="./assets/logo-rounded.svg" id="logo" alt="logo" onerror="this.onerror=null;this.src='./assets/img/logo-rounded.svg';"><a class="navbar-brand" href="../">guidotorresmx</a>
+        <button class="navbar-toggler justify-content-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../blog/about/">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="../react-recipes/">Demo</a></li>
+            <li class="nav-item me-2"><a class="nav-link btn btn-secondary" href="./assets/GuidoTorres_Resume.pdf" target="_blank">Download</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap">
+            <div class="btn-group flex-wrap rounded-start" role="group" aria-label="First group">
+              <!-- Twitter-->
+              <button class="btn btn-secondary" title="twitter" onclick="location.href='//twitter.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-twitter icon"></i></button>
+              <!-- Github-->
+              <button class="btn btn-secondary" title="github" onclick="location.href='//github.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-github icon"></i></button>
+              <!-- Ins-->
+              <button class="btn btn-secondary" title="instagram" onclick="location.href='//www.instagram.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-instagram icon"></i></button>
+              <!-- Linkedin-->
+              <button class="btn btn-secondary" title="linkedin" onclick="location.href='//www.linkedin.com/in/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-linkedin icon"></i></button>
+              <!-- Facebook-->
+              <button class="btn btn-secondary" title="facebook" onclick="location.href='//www.facebook.com/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-facebook icon"></i></button>
+              <!-- Mail-->
+              <button class="btn btn-secondary" title="mail" onclick="location.href='mailto:marco@guidotorres.mx'"><i class="my-1 py-1 fa fa-solid fa-envelope-open icon"></i></button>
+              <!-- Whatsapp-->
+              <button class="btn btn-secondary" title="whatsapp" onclick="location.href='//wa.me/16479066194'"><i class="my-1 py-1 fa fa-brands fa-whatsapp icon"></i></button>
+              <!-- Telegram-->
+              <button class="btn btn-secondary" title="telegram" onclick="location.href='//t.me/guidotorresmx'"><i class="my-1 py-1 fa fa-brands fa-telegram icon"></i></button>
+            </div>
+          </ul>
+        </div>
       </div>
     </nav>
     <div id="page-container-and-footer">
@@ -60,7 +63,7 @@
                 <h4>Address</h4>
                 <h5 class="right" id="address">Toronto, ON</h5>
                 <h4>Phone</h4>
-                <h5 class="right" id="phone"> <a href="tel:647-906-6194">647 906 6194</a></h5>
+                <h5 class="right" id="phone"> <a href="tel:647-906-6194">(647) 906-6194</a></h5>
                 <h4>E-mail</h4>
                 <h5 class="right" id="email"> <a href="mailto:marco@guidotorres.mx">marco@guidotorres.mx</a></h5>
                 <h4>Linkedin</h4>
@@ -276,8 +279,5 @@
         </div>
       </footer>
     </div>
-    <form method="get" action="./assets/GuidoTorres_Resume.pdf"> 
-      <button class="btn btn-success" id="download">download <img src="./assets/icon-download.svg" alt="Download resume" fill="currentColor"></button>
-    </form>
   </body>
 </html>

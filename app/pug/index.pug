@@ -3,15 +3,12 @@ html(lang="en")
     include header.pug
     body        
         include nav.pug
-        
+
         div#page-container-and-footer
             div#page-container
                 article.resume
                     include aside.pug
                     include main.pug
             include footer.pug
-        form(method="get" action="./assets/GuidoTorres_Resume.pdf")  
-            button.btn.btn-success#download download 
-                img(src="./assets/icon-download.svg" alt="Download resume" fill="currentColor") 
                     
 
