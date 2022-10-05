@@ -33,7 +33,7 @@ function pugTask() {
 // JavaScript Task
 function jsTask() {
   return (
-    src("app/js/script.js", { sourcemaps: true, allowEmpty: true })
+    src("app/js/**.js", { sourcemaps: true, allowEmpty: true })
       //.pipe(terser())
       .pipe(dest("docs/js", { sourcemaps: "." }))
   );
@@ -43,9 +43,8 @@ function imgTask() {
   return src("app/images/*").pipe(image()).pipe(dest("docs/assets"));
 }
 
-function assetsTask(){
-  return gulp.src('app/assets/*')
-    .pipe(gulp.dest('docs/assets'));
+function assetsTask() {
+  return gulp.src("app/assets/*").pipe(gulp.dest("docs/assets"));
 }
 
 // Browsersync Tasks

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-  el_autohide = document.querySelector('.autohide');
-  page = document.getElementById("page-container-and-footer")
-  navbar = document.querySelector('.navbar')
-  page.style.paddingTop = navbar.offsetHeight + 'px';
+  let el_autohide = document.querySelector('.autohide');
+  let page = document.getElementById("page-container-and-footer")
+  let navbar = document.querySelector('.navbar')
+  let page.style.paddingTop = navbar.offsetHeight + 'px';
 
   if(el_autohide){
     var last_scroll_top = 0;
