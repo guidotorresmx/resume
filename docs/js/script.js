@@ -1,23 +1,12 @@
-document.addEventListener("DOMContentLoaded", function(){
+import addDownloadButton from "./downloadbtn.js";
+import hideNavbar from "./navbar.js";
 
-  let el_autohide = document.querySelector('.autohide');
-  let page = document.getElementById("page-container-and-footer")
-  let navbar = document.querySelector('.navbar')
-  let page.style.paddingTop = navbar.offsetHeight + 'px';
-
-  if(el_autohide){
-    var last_scroll_top = 0;
-    window.addEventListener('scroll', function() {
-      let scroll_top = window.scrollY;
-        if(scroll_top < last_scroll_top) {
-          el_autohide.classList.remove('scrolled-down');
-          el_autohide.classList.add('scrolled-up');
-        }else {
-          el_autohide.classList.remove('scrolled-up');
-          el_autohide.classList.add('scrolled-down');
-        }
-        last_scroll_top = scroll_top;
-    }); 
-  }
-}); 
+document.addEventListener("DOMContentLoaded", function () {
+  if (
+    window.location.href.includes("resume") ||
+    window.location.href.includes("localhost")
+  )
+    addDownloadButton();
+  hideNavbar();
+});
 //# sourceMappingURL=script.js.map

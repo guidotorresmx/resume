@@ -2,8 +2,8 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "raw html and css resume",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"

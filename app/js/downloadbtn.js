@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function addDownloadButton() {
 	console.log("inside layout");
 
 	let a = document.createElement("a");
@@ -9,4 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	let navbarButtonParent = document.getElementById("custom-button");
 	navbarButtonParent.appendChild(a);
-});
+}
+
+export default addDownloadButton;

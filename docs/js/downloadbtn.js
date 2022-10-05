@@ -10,4 +10,6 @@ function addDownloadButton() {
 	let navbarButtonParent = document.getElementById("custom-button");
 	navbarButtonParent.appendChild(a);
 }
-//# sourceMappingURL=layout.js.map
+
+export default addDownloadButton;
+//# sourceMappingURL=downloadbtn.js.map
