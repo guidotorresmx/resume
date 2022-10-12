@@ -4,8 +4,10 @@ function hideNavbar() {
   let navbar = document.querySelector(".navbar");
   page.style.paddingTop = navbar.offsetHeight + "px";
 
+  el_autohide.classList.remove("scrolled-down");
+  el_autohide.classList.add("scrolled-up");
   if (el_autohide) {
-    var last_scroll_top = 0;
+    let last_scroll_top = 0;
     window.addEventListener("scroll", function () {
       let scroll_top = window.scrollY;
       if (scroll_top < last_scroll_top) {
