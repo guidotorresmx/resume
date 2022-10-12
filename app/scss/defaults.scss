@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
+  color: #000;
   transition: all 1s;
 }
 
@@ -46,4 +47,7 @@ a:link, a:visited {
   justify-content: center;
   background-color: $resume-bg;
   flex-wrap: wrap;
+  transition: all 1s ease-in-out;
+  transform-origin: top center;
+  transform: scale(.7,0);
 }

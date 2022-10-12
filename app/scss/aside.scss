@@ -84,10 +84,13 @@ aside ul#programming > li:hover {
   transition: all .3s
 }
 
+.highlight{
+  transition: all .3s
+}
+
 .highlight:hover {
   transform: scaleY(1.015);
   box-shadow: 1px 1px 16px -3px $white;
-  transition: all .3s
 }
 
 aside ul#programming > li > dt {
