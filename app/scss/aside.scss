@@ -8,7 +8,7 @@ $white: #ffffff;
 aside {
   flex-grow: 1;
   flex-shrink: 0.5;
-  flex-basis: 200px;
+  flex-basis: 250px;
   background-color: $blue-light;
   min-height: 100vh;
   padding-top: 1rem;
@@ -35,6 +35,7 @@ aside :is(h1, h2, h6) {
 
 section.summary > div > h5{
   text-align: justify;
+  font-size: 1.25rem
 }
 
 aside :is(h4, h5) {
@@ -45,7 +46,7 @@ aside :is(h4, h5) {
 }
 
 aside :is(h3) {
-  font-size: 1.25;
+  font-size: 1.25rem;
   font-weight: 300;
   background-color: $blue-dark;
 }
