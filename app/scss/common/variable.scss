@@ -1,7 +1,11 @@
 $borderRadius: 6px;
-$boxShadow: 0 6px 30px -10px rgba(0, 0, 0, .1);
+$boxShadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
 
 $accent-color-main: #9477f5;
 $accent-color-sec: #f58a78;
+
+$primary-bg-color: #9477f5;
+$second-bg-color: #825ff5;
+$third-bg-color: #7047f5;
 
 $activeColor: var(--accent-color-main);

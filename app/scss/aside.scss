@@ -5,11 +5,24 @@ $gray: #eeeeee;
 $gray-dark: #cccccc;
 $white: #ffffff;
 
+$borderRadius: 6px;
+$boxShadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
+
+$accent-color-main: #9477f5;
+$accent-color-sec: #f58a78;
+
+$primary-bg-color: #9477f5;
+$second-bg-color: #825ff5;
+$third-bg-color: #7047f5;
+
+$activeColor: var(--accent-color-main);
+
+@use "common/variable";
+
 aside {
   flex-grow: 1;
   flex-shrink: 0.5;
   flex-basis: 250px;
-  background-color: $blue-light;
   min-height: 100vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -21,25 +34,23 @@ aside :is(h1, h2, h3, h4, h5, h6) {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: white;
-  font-weight:300;
-
+  font-weight: 300;
 }
 
 aside :is(h1, h2, h6) {
-  background-color: $blue-light;
+  background-color: $second-bg-color;
   padding-right: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-
-section.summary > div > h5{
+section.summary > div > h5 {
   text-align: justify;
-  font-size: 1.25rem
+  font-size: 1.25rem;
 }
 
 aside :is(h4, h5) {
-  background-color: $blue-light;
+  background-color: $second-bg-color;
   font-weight: 300;
   padding-right: 1rem;
   font-size: 1.25rem;
@@ -48,7 +59,7 @@ aside :is(h4, h5) {
 aside :is(h3) {
   font-size: 1.25rem;
   font-weight: 300;
-  background-color: $blue-dark;
+  background-color: $third-bg-color;
 }
 
 .right {
@@ -82,11 +93,11 @@ aside ul#programming > li {
 aside ul#programming > li:hover {
   transform: scaleY(1.015);
   box-shadow: 1px 1px 16px -3px $white;
-  transition: all .3s
+  transition: all 0.3s;
 }
 
-.highlight{
-  transition: all .3s
+.highlight {
+  transition: all 0.3s;
 }
 
 .highlight:hover {

@@ -3,7 +3,6 @@ aside {
   flex-grow: 1;
   flex-shrink: 0.5;
   flex-basis: 250px;
-  background-color: #003d73;
   min-height: 100vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -19,7 +18,7 @@ aside :is(h1, h2, h3, h4, h5, h6) {
 }
 
 aside :is(h1, h2, h6) {
-  background-color: #003d73;
+  background-color: #825ff5;
   padding-right: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -31,7 +30,7 @@ section.summary > div > h5 {
 }
 
 aside :is(h4, h5) {
-  background-color: #003d73;
+  background-color: #825ff5;
   font-weight: 300;
   padding-right: 1rem;
   font-size: 1.25rem;
@@ -40,7 +39,7 @@ aside :is(h4, h5) {
 aside :is(h3) {
   font-size: 1.25rem;
   font-weight: 300;
-  background-color: #00315c;
+  background-color: #7047f5;
 }
 
 .right {

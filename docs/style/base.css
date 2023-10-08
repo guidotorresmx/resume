@@ -180,6 +180,9 @@
   color: var(--second-text-color) !important;
 }
 
+:root {
+  background: var(--primary-bg-color);
+}
 :root body {
   margin: 0;
   height: 100vh;
