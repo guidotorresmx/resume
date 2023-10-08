@@ -1,6 +1,5 @@
-import addDownloadButton from "./downloadbtn.js";
-import hideNavbar from "./navbar.js";
-import animateResume from "./animate-resume.js"
+import addDownloadButton from "./download-btn.js";
+import animateResume from "./animate-resume.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   if (
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href.includes("localhost")
   )
     addDownloadButton();
-  hideNavbar();
   animateResume();
 });
 //# sourceMappingURL=script.js.map
