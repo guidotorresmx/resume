@@ -1,0 +1,22 @@
+- var theme = 'dark'
+- var lang  = 'en'
+- var url_for = function(path){
+-     return "" + path;
+-   }
+
+doctype html
+html(lang=`${ lang }` class= `appearance-${ theme }`)
+    head
+        include components/header
+    body.is-flex.is-flex-direction-column 
+        include components/navbar
+        main.is-fixed-top
+            div#page-container
+                article.resume
+                    include components/aside
+                    include components/main
+        include components/footer
+
+
+                    
+
