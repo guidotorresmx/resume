@@ -47,8 +47,8 @@ nav#navbar {
   filter: drop-shadow(0 -10px 20px var(--primary-bg-color));
 }
 
-.navbar.is-dark .navbar-brand,
-.navbar.is-dark .navbar-item {
+.navbar-item,
+.navbar {
   transition: 0.7s;
   animation: navAnimOpen 0.7s ease-in-out;
 }
@@ -60,19 +60,10 @@ nav#navbar {
   }
 }
 
-.navbar-menu {
-  animation: navAnimOpen 0.7s ease-in-out;
-}
-
 @keyframes navAnimOpen {
   0% {
-    display: none;
     opacity: 0;
-    max-height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
+    max-height: 0%;
   }
   100% {
     opacity: 1;
