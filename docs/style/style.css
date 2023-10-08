@@ -13,7 +13,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
   color: #000;
   transition: all 1s;
 }
@@ -52,7 +51,6 @@ aside {
   flex-grow: 1;
   flex-shrink: 0.5;
   flex-basis: 250px;
-  background-color: #003d73;
   min-height: 100vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -68,7 +66,7 @@ aside :is(h1, h2, h3, h4, h5, h6) {
 }
 
 aside :is(h1, h2, h6) {
-  background-color: #003d73;
+  background-color: #825ff5;
   padding-right: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -80,7 +78,7 @@ section.summary > div > h5 {
 }
 
 aside :is(h4, h5) {
-  background-color: #003d73;
+  background-color: #825ff5;
   font-weight: 300;
   padding-right: 1rem;
   font-size: 1.25rem;
@@ -89,7 +87,7 @@ aside :is(h4, h5) {
 aside :is(h3) {
   font-size: 1.25rem;
   font-weight: 300;
-  background-color: #00315c;
+  background-color: #7047f5;
 }
 
 .right {
@@ -339,52 +337,5 @@ footer p {
 
 #footer {
   background-color: black;
-}
-
-#page-container {
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  transition: top 0.3s;
-}
-
-#page-container-and-footer {
-  transition: top 0.3s;
-  position: relative;
-}
-
-#download {
-  position: fixed;
-  top: 2rem;
-  right: 3rem;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.screen-reader {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.screen-reader-focusable:active,
-.screen-reader-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: normal;
-  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
