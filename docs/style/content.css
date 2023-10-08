@@ -34,7 +34,6 @@
 main {
   top: 0;
   animation: background-pan 14s linear infinite;
-  background: linear-gradient(to right, #9477f5, #f58a78, #9477f5);
   background-size: 200%;
 }
 

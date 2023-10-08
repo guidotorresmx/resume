@@ -2,15 +2,14 @@
   transition: top 0.7s;
 }
 
-.scrolled-down{
-  transform: translateY(-100%); 
+.scrolled-down {
+  transform: translateY(-100%);
   transition: all 1s;
 }
 
-.scrolled-up{
-  transform:translateY(0); 
+.scrolled-up {
+  transform: translateY(0);
   transition: all 1s;
-
 }
 
 #navbar {
@@ -23,7 +22,7 @@
   transition: all 1s;
 }
 
-#logo{
+#logo {
   height: 50px;
 }
 
@@ -34,15 +33,6 @@
   color: #f2f2f2;
   font-size: 30px;
   padding: 10px 10px;
-}
-
-#navbar a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
 }
 
 #navbar a:hover {
@@ -59,13 +49,6 @@
   width: 100vw;
   text-align: center;
   overflow: hidden;
-}
-
-svg {
-  width: 100vw;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .two {
@@ -103,5 +86,3 @@ section .ptemp {
   height: 100vh;
   width: 100vw;
 }
-
-
