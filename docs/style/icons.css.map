@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["icons.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;;AAGF;EACE","file":"icons.css","sourcesContent":[".icon {\r\n  color: white;\r\n  padding: 1.5rem 0.4rem 0.4rem 0.4rem;\r\n}\r\n\r\n.icon:hover {\r\n  color: #F58A78\r\n}\r\n"]}
