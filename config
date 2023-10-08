@@ -1,0 +1,9 @@
+# Virtual file neesting in VS Code
+
+Use the following config:
+
+```js
+{
+    "config": ".prettierrc.json, .prettierignore, gulpfile.js, package.json"
+}
+```
