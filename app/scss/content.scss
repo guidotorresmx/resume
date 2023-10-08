@@ -37,12 +37,6 @@
 main {
   top: 0;
   animation: background-pan 14s linear infinite;
-  background: linear-gradient(
-    to right,
-    $accent-color-main,
-    $accent-color-sec,
-    $accent-color-main
-  );
   background-size: 200%;
 }
 

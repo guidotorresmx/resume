@@ -32,15 +32,6 @@
   padding: 10px 10px;
 }
 
-#navbar a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
 #navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -55,13 +46,6 @@
   width: 100vw;
   text-align: center;
   overflow: hidden;
-}
-
-svg {
-  width: 100vw;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .two {
