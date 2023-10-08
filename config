@@ -1,9 +1,12 @@
 # Virtual file neesting in VS Code
 
-Use the following config:
+add the following config to your vscode settings to declutter side explorer:
 
 ```js
 {
-    "config": ".prettierrc.json, .prettierignore, gulpfile.js, package.json"
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "config": ".prettierrc.json, .prettierignore, gulpfile.js, package.json, LICENSE, .gitignore"
+  }
 }
 ```
