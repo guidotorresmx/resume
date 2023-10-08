@@ -2,7 +2,8 @@
 @import "common/variable";
 @import "common/helper";
 @import "themes/theme";
-
+@import "header";
+@import "footer";
 :root {
   background: var(--primary-bg-color);
   body {
@@ -67,5 +68,3 @@
     }
   }
 }
-
-@import "header";

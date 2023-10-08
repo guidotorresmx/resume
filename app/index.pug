@@ -10,11 +10,11 @@ html(lang=`${ lang }` class= `appearance-${ theme }`)
         include components/header
     body.is-flex.is-flex-direction-column 
         include components/navbar
-        main.is-fixed-top
-            div#page-container
-                article.resume
+        main
+            article.post-container.is-flex.is-justify-content-center.section.container.is-max-widescreen.pt-4.px-2 
+                div.columns.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen.is-full-width
                     include components/aside
-                    include components/main
+                    include components/resume
         include components/footer
 
 
