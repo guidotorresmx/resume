@@ -1,0 +1,100 @@
+main {
+  flex-grow: 4.5;
+  flex-shrink: 2;
+  flex-basis: 300px;
+  padding: 1rem;
+}
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.summary {
+  transition: all 0.3s;
+}
+
+.structure:hover,
+.summary:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 16px -3px #002e58;
+}
+
+div.dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0;
+  align-content: center;
+}
+
+.details {
+  flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 280px;
+  padding-left: 2rem;
+}
+
+main ul {
+  padding: 0;
+}
+
+div.dates > span.start-date,
+div.dates > span.end-date {
+  flex-grow: 2;
+  flex-shrink: 0.7;
+  flex-basis: 4rem;
+  padding: 0;
+  text-align: center;
+}
+
+main h2 {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+main h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+main h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+div.details ul {
+  padding: 0;
+  margin: 0;
+}
+
+.details p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 em {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.details span,
+.details li,
+.details p {
+  text-align: justify !important;
+}
+/*# sourceMappingURL=main.css.map */

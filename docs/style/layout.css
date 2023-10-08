@@ -1,0 +1,20 @@
+#page-container {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  transition: top 0.3s;
+}
+
+#page-container-and-footer {
+  background-color: black;
+  transition: top 0.3s;
+  position: relative;
+}
+
+#download {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+}
+/*# sourceMappingURL=layout.css.map */
