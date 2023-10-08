@@ -9,6 +9,7 @@ function hideNav() {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
+    console.log(currentScroll);
     if (currentScroll <= 0) {
       $navbar.classList.remove("scroll-up");
     }
@@ -16,9 +17,9 @@ function hideNav() {
       currentScroll > lastScroll &&
       !$navbar.classList.contains("scroll-down")
     ) {
-      //$navbar.classList.remove('scroll-up');
-      //$navbar.classList.add('scroll-down');
-      $navbar.classList.add("scroll-up");
+      $navbar.classList.remove("scroll-up");
+      $navbar.classList.add("scroll-down");
+      //$navbar.classList.add("scroll-up");
     }
     if (
       currentScroll < lastScroll &&
