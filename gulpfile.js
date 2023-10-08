@@ -17,15 +17,20 @@ const watch = gulp.watch;
 const series = gulp.series;
 
 // Sass Task
+function cssTask() {
+  return src("app/scss/**/*.css", { sourcemaps: true, allowEmpty: true }).pipe(
+    dest("docs/style", { sourcemaps: "." })
+  );
+}
 function scssTask() {
-  return src("app/scss/style.scss", { sourcemaps: true, allowEmpty: true })
+  return src("app/scss/**/*.scss", { sourcemaps: true, allowEmpty: true })
     .pipe(sass())
-    .pipe(dest("docs/styles", { sourcemaps: "." }));
+    .pipe(dest("docs/style", { sourcemaps: "." }));
 }
 
 // Pug Task
 function pugTask() {
-  return src("app/pug/index.pug", { sourcemaps: true, allowEmpty: true })
+  return src("app/index.pug", { sourcemaps: true, allowEmpty: true })
     .pipe(pug({ pretty: true }))
     .pipe(dest("docs"));
 }
@@ -66,13 +71,19 @@ function browsersyncReload(cb) {
 function watchTask() {
   watch("docs/*.html", browsersyncReload);
   watch(
-    ["app/scss/**/*.scss", "app/js/**/*.js", "app/pug/**/*.pug"],
+    [
+      "app/scss/**/*.scss",
+      "app/js/**/*.js",
+      "app/components/**/*.pug",
+      "app/index.pug",
+    ],
     series(scssTask, jsTask, pugTask, browsersyncReload)
   );
 }
 
 // Default Gulp task
 export default series(
+  cssTask,
   scssTask,
   jsTask,
   pugTask,
