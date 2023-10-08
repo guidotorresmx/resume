@@ -180,66 +180,6 @@
   color: var(--second-text-color) !important;
 }
 
-:root {
-  background: var(--primary-bg-color);
-}
-:root body {
-  margin: 0;
-  height: 100vh;
-  padding-top: 0;
-}
-:root body a {
-  color: inherit;
-}
-:root body a:hover, :root body a:hover .iconfont {
-  text-decoration: none;
-  color: var(--accent-color-main) !important;
-}
-:root body .tag.post-item-tag {
-  margin-right: 5px;
-  font-weight: bold;
-  color: #9477f5;
-  font-style: normal;
-  border-radius: 10px;
-  background: transparent;
-  border: 2px solid #9477f5;
-}
-:root body .button.is-default {
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  color: var(--second-text-color);
-  background: var(--third-bg-color);
-}
-:root body > main {
-  flex-grow: 2;
-  flex-basis: 0;
-}
-:root body > footer {
-  margin: 0 30px;
-  padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-:root body > footer .sns-container .iconfont {
-  margin: 0 5px;
-  font-size: 30px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-:root body > footer .sns-container .fa {
-  margin: 0 5px;
-  font-size: 1.25rem;
-  border-radius: 50%;
-}
-:root body > footer section.sns-container a.button.is-dark {
-  background-color: var(--primary-bg-color);
-}
-:root body > footer section.sns-container a.button.is-dark:hover i, :root body > footer section.sns-container a.button.is-dark:hover .iconfont i {
-  text-decoration: none;
-  color: var(--accent-color-main) !important;
-  animation: bounce 1s ease infinite;
-}
-
 .debug {
   border: 1px solid red;
 }
@@ -410,5 +350,73 @@ nav#navbar {
 }
 #logo-brand:hover #arrow3, #logo-brand:focus #arrow3, #logo-brand:active #arrow3 {
   transform: rotateZ(45deg) translate(7%, -70%);
+}
+
+footer p {
+  text-align: center;
+}
+
+#footer {
+  background-color: black;
+}
+
+:root {
+  background: var(--primary-bg-color);
+}
+:root body {
+  margin: 0;
+  height: 100vh;
+  padding-top: 0;
+}
+:root body a {
+  color: inherit;
+}
+:root body a:hover, :root body a:hover .iconfont {
+  text-decoration: none;
+  color: var(--accent-color-main) !important;
+}
+:root body .tag.post-item-tag {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #9477f5;
+  font-style: normal;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #9477f5;
+}
+:root body .button.is-default {
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  color: var(--second-text-color);
+  background: var(--third-bg-color);
+}
+:root body > main {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+:root body > footer {
+  margin: 0 30px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+:root body > footer .sns-container .iconfont {
+  margin: 0 5px;
+  font-size: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+:root body > footer .sns-container .fa {
+  margin: 0 5px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+}
+:root body > footer section.sns-container a.button.is-dark {
+  background-color: var(--primary-bg-color);
+}
+:root body > footer section.sns-container a.button.is-dark:hover i, :root body > footer section.sns-container a.button.is-dark:hover .iconfont i {
+  text-decoration: none;
+  color: var(--accent-color-main) !important;
+  animation: bounce 1s ease infinite;
 }
 /*# sourceMappingURL=base.css.map */

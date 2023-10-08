@@ -15,34 +15,4 @@ body {
   color: #000;
   transition: all 1s;
 }
-
-#page-container {
-  display: flex;
-  justify-content: center;
-}
-
-a {
-  color: inherit;
-  /* blue colors for links too */
-  text-decoration: inherit;
-  /* no underline */
-}
-
-a:link,
-a:visited {
-  color: inherit;
-  /* blue colors for links too */
-  text-decoration: inherit;
-  /* no underline */
-}
-
-.resume {
-  width: clamp(300px, 100%, 768px);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  transition: all 1s ease-in-out;
-  transform-origin: top center;
-  transform: scale(1, 1);
-}
 /*# sourceMappingURL=defaults.css.map */
