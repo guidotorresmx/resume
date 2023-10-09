@@ -3,6 +3,8 @@
 import gulp from "gulp";
 import dartSass from "sass";
 import gulpSass from "gulp-sass";
+import gulpData from "gulp-data";
+import fs from "fs";
 const sass = gulpSass(dartSass);
 
 import terser from "gulp-terser";
@@ -31,6 +33,11 @@ function scssTask() {
 // Pug Task
 function pugTask() {
   return src("app/index.pug", { sourcemaps: true, allowEmpty: true })
+    .pipe(
+      gulpData(() => {
+        return JSON.parse(fs.readFileSync("app/assets/resume.json"));
+      })
+    )
     .pipe(pug({ pretty: true }))
     .pipe(dest("docs"));
 }
