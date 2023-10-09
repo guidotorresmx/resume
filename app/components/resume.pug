@@ -1,37 +1,45 @@
 section.column
-    article.work-history.article-item-card
+    article.work-history.post-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Work History
             ul.works
                 each work in sections.work.items
-                    li.work
-                        h4 #{work.name}
-                        .dates
-                            time.start-date #{work.date.start}
-                            span  -
-                            time.end-date #{work.date.end}
+                    li
+                        .work.is-flex.is-justify-content-space-between.pb-0
+                            h4.is-inline #{work.name}
+                            .is-inline.dates
+                                time.has-text-grey.start-date #{work.date.start}
+                                span  -
+                                time.has-text-grey.end-date #{work.date.end}
                         ul.summary
                             each statement in work.summary.split("- ").slice(1)
                                 li.statement #{statement} 
 
-    article.education.article-item-card
+    article.education.post-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Education
             ul.educations
                 each education in sections.education.items
-                    li.education
-                        .dates
-                            time.start-date #{education.date.start}
-                            span  -
-                            time.end-date #{education.date.end}
-                        h4 #{education.area}
-                        h5 #{education.institution}
+                    li
+                        .is-flex.is-justify-content-space-between.pb-0
+                            h4.mb-0.is-inline  #{education.degree} #{education.area}
 
-    article.certifications.article-item-card
+                            .dates.is-inline
+                                time.has-text-grey.start-date #{education.date.start}
+                                span  -
+                                time.has-text-grey.end-date #{education.date.end}
+                        .mb-2
+                            p.mb-2.has-text-grey.is-inline #{education.institution}
+    
+                    
+                        
+
+    article.certifications.post-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Certifications
             ul.certifications
                 each certification in sections.certifications.items
                     li.certification
-                        h4 #{certification.name}
-                        h5 #{certification.issuer}
+                        h4.mb-0 #{certification.name}
+                        .mb-2
+                            p #{certification.issuer}
