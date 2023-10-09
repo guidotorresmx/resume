@@ -92,6 +92,7 @@ function watchTask() {
 export default series(
   cssTask,
   scssTask,
+  assetsTask,
   jsTask,
   pugTask,
   imgTask,
