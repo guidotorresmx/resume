@@ -1,43 +1,45 @@
 - var website = basics.email.split("@")[1] 
 aside.general-info.column.is-4-tablet.is-3-widescreen
-    main.aside-card-container.title.highlight.profile-widget
-        h1 #{basics.name} 
-        h1 <em> #{basics.headline} </em>
+    main.aside-card-container.profile.highlight
+        h3.username.has-text-weight-bold #{basics.name} 
+        h3.has-text-weight-bold <em> #{basics.headline} </em>
     main.aside-card-container.contact.highlight
-        h3 Contact
+        h4.has-text-weight-bold Contact
         div.highlight
             h4 Address
-            h5.right#address #{basics.location.city}, #{basics.location.region}
+            p.has-text-right#address #{basics.location.city}, #{basics.location.region}
             h4 Phone
-            h5.right#phone 
+            p.has-text-right#phone 
                 a(title="Phone number" href='tel:' + basics.phone) #{basics.phone} 
             h4 E-mail
-            h5.right#email 
+            p.has-text-right#email 
                 a(title="Email" href="mailto:" + basics.email) #{basics.email}
             h4 Linkedin
-            h5.right#linkedin 
+            p.has-text-right#linkedin 
                 a(title="LinkedIn" href="https://www.linkedin.com/in/" + basics.profiles[0].username) /#{basics.profiles[0].username}
             h4 Website & Blog
-            h5.right#website 
+            p.has-text-right#website 
                 a(title="Website" href="https://www." + website ) | #{website}
-            h5.right#blog 
+            p.has-text-right#blog 
                 a(title="Blog" href="https://www." + website + "/blog") | #{website}/blog
     main.aside-card-container.summary.highlight
-        h3 Summary
+        h4.has-text-weight-bold Summary
         div.highlight
-            h5.highlight #{basics.summary.split("*").join("")}
+            p.has-text-justified.highlight #{basics.summary.split("*").join("")}
     main.aside-card-container.skills.highlight
-        h3 Skills
+        h4.has-text-weight-bold Skills
         ul.skills
             each skill in sections.skills.items
                 li.skill
                     h4 #{skill.name}
-                    h5 #{skill.level}
+                        ul.has-text-centered
+                            each s in skill.level.split(",")
+                                span.tag.post-item-tag #{s}
 
     main.aside-card-container.interests.highlight
-        h3 Interests
-        ul.right.highlight#interests
+        h4.has-text-weight-bold Interests
+        ul.has-text-centered.highlight#interests
             each interest in sections.interests.items
                 li.interest
-                    h4 #{interest.name}
+                    span.tag.post-item-tag #{interest.name}
                 
