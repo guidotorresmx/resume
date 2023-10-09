@@ -1,0 +1,353 @@
+{
+  "basics": {
+    "name": "Marco Guido",
+    "email": "marco@guidotorres.mx",
+    "phone": "+1 (647) 906 6194",
+    "photo": {
+      "url": "",
+      "filters": {
+        "size": 128,
+        "shape": "circle",
+        "border": true,
+        "grayscale": true
+      },
+      "visible": true
+    },
+    "summary": "Enthusiastic developer highly skilled in **Python and C++**, intermediate in C# and JavaScript. 5 years of professional experience in software development and a strong background in embedded electronics. **Analytical, resourceful, problem-solving and detail-oriented**.",
+    "website": "",
+    "headline": "Back-end Developer",
+    "location": {
+      "city": "Toronto",
+      "region": "ON",
+      "address": "",
+      "country": "(willing to relocate)",
+      "postalCode": "Canada"
+    },
+    "profiles": [
+      {
+        "id": "f22d939e-890e-43ca-b3e6-15b2988e2bed",
+        "url": "",
+        "network": "LinkedIn",
+        "username": "guidotorresmx"
+      }
+    ],
+    "birthdate": ""
+  },
+  "sections": {
+    "work": {
+      "id": "work",
+      "name": "Work Experience",
+      "type": "work",
+      "items": [
+        {
+          "id": "2c9b938f-b587-4b69-ab30-caeab11bf579",
+          "url": "",
+          "date": {
+            "end": "2022-09-01",
+            "start": "2019-08-01"
+          },
+          "name": "NDS Cognitive Labs",
+          "summary": "- Collaborated on the development of all stages of artificial intelligence driven chatbots, designed for omnichannel and custom integrations.\n- Created and modified multiple CI/CD pipelines in Azure, AWS, and on-premises environments.\n- Updated and improved pre-existing ML solutions, adding new stages to pipelines and improving performance by implementing parallelization and cache-based technologies\n- Revised, modularized, and updated old code bases to modern development standards, reducing operating costs and improving functionality.",
+          "position": "Back-end Developer"
+        },
+        {
+          "id": "4d1dd790-b2d4-4da0-939a-4da4d78369df",
+          "url": "",
+          "date": {
+            "end": "2017-04-15",
+            "start": "2015-08-01"
+          },
+          "name": "Softtek",
+          "summary": "- Designed and implemented testing suites for PostgreSQL consumer microservices and Python and C++ Middleware for REST APIs and gRPC.\n- Automated and optimized business logic for the core marketing experiments, including A/B, Auto-Targeting, and Multivariate Testing.\n- Assumed accountability for thoroughly documenting all facets of the projects I engaged with.",
+          "position": "Back-end Developer"
+        }
+      ],
+      "columns": 1,
+      "visible": true
+    },
+    "awards": {
+      "id": "awards",
+      "name": "Awards",
+      "type": "basic",
+      "items": [],
+      "columns": 1,
+      "visible": true
+    },
+    "skills": {
+      "id": "skills",
+      "name": "Skills",
+      "type": "basic",
+      "items": [
+        {
+          "id": "f87995f5-8f80-40d4-b0ca-25f5711c3c9a",
+          "name": "Orchestration",
+          "level": "Kubernetes, Docker, Airflow, Helm",
+          "keywords": [],
+          "levelNum": 0
+        },
+        {
+          "id": "876ca185-681a-4aca-9d35-eb59b8166cf5",
+          "name": "DB",
+          "level": "MongoDB, PostreSQL, Redis",
+          "keywords": [],
+          "levelNum": 0
+        },
+        {
+          "id": "ede04b96-ea9f-4f66-b29b-ab7a3a21ccef",
+          "name": "Machine Learning",
+          "level": "Image Processing, Evolutionary Algorithms",
+          "keywords": [],
+          "levelNum": 0
+        },
+        {
+          "id": "4b5a5ca9-d71b-43c6-b151-f548cdb189e6",
+          "name": "Programming",
+          "level": "(Seasoned) Python and C++, (Intermediate) LabView, JS, C#, MATLAB ",
+          "keywords": [],
+          "levelNum": 0
+        },
+        {
+          "id": "9b40c29e-8f78-44d7-b699-d53ffaf522b2",
+          "name": "Cloud computing",
+          "level": "AWS, Azure",
+          "keywords": [],
+          "levelNum": 0
+        },
+        {
+          "id": "3d57b634-fccd-467b-adb0-9f8a47479865",
+          "name": "Tools",
+          "level": "Bash, PowerShell, GIT",
+          "keywords": [],
+          "levelNum": 0
+        }
+      ],
+      "columns": 2,
+      "visible": true
+    },
+    "projects": {
+      "id": "projects",
+      "name": "Projects",
+      "type": "basic",
+      "items": [],
+      "columns": 2,
+      "visible": false
+    },
+    "education": {
+      "id": "education",
+      "name": "Education",
+      "type": "basic",
+      "items": [
+        {
+          "id": "70f48376-6c57-4e7f-9134-69ddac50a7bf",
+          "url": "",
+          "area": "Web Development",
+          "date": {
+            "end": "2023-05-01",
+            "start": "2021-09-01"
+          },
+          "score": "",
+          "degree": "AS",
+          "courses": [],
+          "summary": "",
+          "institution": "Humber College"
+        },
+        {
+          "id": "e0866b10-7668-4f48-aeb8-b6e7902d6d91",
+          "url": "",
+          "area": "Electrical & Computer",
+          "date": {
+            "end": "2019-07-01",
+            "start": "2017-06-01"
+          },
+          "score": "",
+          "degree": "MSc",
+          "courses": [],
+          "summary": "",
+          "institution": "National Polytechnic Institute"
+        },
+        {
+          "id": "bb12fcf7-c56b-4789-ae0d-fac9a12a5d81",
+          "url": "",
+          "area": "Electrical & Computer Engineering",
+          "date": {
+            "end": "2016-08-12",
+            "start": "2012-08-12"
+          },
+          "score": "",
+          "degree": "BSc",
+          "courses": [],
+          "summary": "",
+          "institution": "Politechnic University of Aguascalientes"
+        }
+      ],
+      "columns": 1,
+      "visible": true
+    },
+    "interests": {
+      "id": "interests",
+      "name": "Interests",
+      "type": "basic",
+      "items": [
+        {
+          "id": "28f2c411-794f-40e3-825a-c84e61297d02",
+          "name": "Embedded Electronics",
+          "keywords": []
+        },
+        {
+          "id": "db8cb3a8-5e05-4162-9b51-8a1ab455f4c3",
+          "name": "Cloud Computing",
+          "keywords": []
+        },
+        {
+          "id": "2ce17833-d67e-464e-b33a-fe5dae71f48a",
+          "name": "Microservices",
+          "keywords": []
+        },
+        {
+          "id": "61b64e83-632b-4215-8599-e274b123a604",
+          "name": "IoT",
+          "keywords": []
+        }
+      ],
+      "columns": 2,
+      "visible": true
+    },
+    "languages": {
+      "id": "languages",
+      "name": "Languages",
+      "type": "basic",
+      "items": [
+        {
+          "id": "7dee4bdc-5a74-4dfc-a119-30bd0c4241cc",
+          "name": "English",
+          "level": "Professional",
+          "levelNum": 0
+        },
+        {
+          "id": "8cc99df4-1dc9-4d33-9861-e28cf146e0ab",
+          "name": "Spanish",
+          "level": "Native",
+          "levelNum": 0
+        }
+      ],
+      "columns": 2,
+      "visible": true
+    },
+    "volunteer": {
+      "id": "volunteer",
+      "name": "Volunteer Experience",
+      "type": "basic",
+      "items": [],
+      "columns": 2,
+      "visible": false
+    },
+    "references": {
+      "id": "references",
+      "name": "References",
+      "type": "basic",
+      "items": [],
+      "columns": 2,
+      "visible": false
+    },
+    "publications": {
+      "id": "publications",
+      "name": "Publications",
+      "type": "basic",
+      "items": [],
+      "columns": 2,
+      "visible": false
+    },
+    "certifications": {
+      "id": "certifications",
+      "name": "Certifications",
+      "type": "basic",
+      "items": [
+        {
+          "id": "5eebde5c-48bc-470c-9a45-bf91f39266d2",
+          "url": "",
+          "date": "",
+          "name": "Certified Associate in Python Programming",
+          "issuer": "OpenEDG Python Institute",
+          "summary": ""
+        },
+        {
+          "id": "e9e759e5-fda5-41bc-afb7-2ff8d43360a2",
+          "url": "",
+          "date": "",
+          "name": "C++ Certified Associate Programmer",
+          "issuer": "C++ Institute",
+          "summary": ""
+        },
+        {
+          "id": "9a844d4b-2650-4cc1-89f4-6926d02090c5",
+          "url": "",
+          "date": "",
+          "name": "AWS Certified Developer Associate",
+          "issuer": "Amazon Web Services",
+          "summary": ""
+        },
+        {
+          "id": "95eb4ee2-33bf-402f-bd4a-c94307e299fa",
+          "url": "",
+          "date": "",
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "summary": ""
+        },
+        {
+          "id": "eecd2fe8-5b72-4b0e-bdb0-7c1655c0ffee",
+          "url": "",
+          "date": "",
+          "name": "MongoDB Certified Developer Associate Exam",
+          "issuer": "MongoDB University",
+          "summary": ""
+        }
+      ],
+      "columns": 1,
+      "visible": true
+    }
+  },
+  "metadata": {
+    "css": {
+      "value": "/* Enter custom CSS here */\n\n* {\n    outline: 1px solid #c01515;\n    \n}",
+      "visible": false
+    },
+    "date": {
+      "format": "MM/YYYY"
+    },
+    "page": {
+      "format": "Letter"
+    },
+    "theme": {
+      "text": "#000000",
+      "primary": "#222222",
+      "background": "#ffffff"
+    },
+    "layout": [
+      [
+        [
+          "work",
+          "certifications",
+          "languages",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        ["education", "interests", "awards", "skills", "publications"]
+      ]
+    ],
+    "locale": "en",
+    "template": "glalie",
+    "typography": {
+      "size": {
+        "body": 14,
+        "heading": 28
+      },
+      "family": {
+        "body": "Open Sans",
+        "heading": "Open Sans"
+      }
+    }
+  },
+  "public": true
+}
