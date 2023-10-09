@@ -9,7 +9,6 @@ function hideNav() {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
-    console.log(currentScroll);
     if (currentScroll <= 0) {
       $navbar.classList.remove("scroll-up");
     }

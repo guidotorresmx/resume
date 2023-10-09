@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 .debug {
   border: 1px solid red;
 }
@@ -712,6 +711,15 @@ footer p {
   list-style-type: none !important;
 }
 
+#download-button {
+  color: var(--primary-text-color);
+  background-color: unset;
+}
+#download-button:hover i, #download-button:hover .iconfont i {
+  text-decoration: none;
+  animation: bounce 1s ease infinite;
+}
+
 :root {
   background: var(--primary-bg-color);
 }
@@ -728,7 +736,6 @@ footer p {
   color: var(--accent-color-main) !important;
 }
 :root body .tag.post-item-tag {
-  margin-right: 5px;
   font-weight: bold;
   color: #9477f5;
   font-style: normal;

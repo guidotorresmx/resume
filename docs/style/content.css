@@ -1,4 +1,13 @@
 .content ul {
   list-style-type: none !important;
 }
+
+#download-button {
+  color: var(--primary-text-color);
+  background-color: unset;
+}
+#download-button:hover i, #download-button:hover .iconfont i {
+  text-decoration: none;
+  animation: bounce 1s ease infinite;
+}
 /*# sourceMappingURL=content.css.map */
