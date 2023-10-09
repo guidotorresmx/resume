@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["resume.js"],"sourcesContent":["module.exports = {\r\n  options: {\r\n    pretty: true,\r\n    data: {\r\n      require: require,\r\n    },\r\n  },\r\n};\r\n"],"file":"resume.js"}
