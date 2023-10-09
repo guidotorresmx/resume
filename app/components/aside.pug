@@ -1,147 +1,43 @@
+- var website = basics.email.split("@")[1] 
 aside.general-info.column.is-4-tablet.is-3-widescreen
     main.aside-card-container.title.highlight.profile-widget
-        h1 Marco Guido 
-        h1 <em> Full-Stack Developer </em>
+        h1 #{basics.name} 
+        h1 <em> #{basics.headline} </em>
     main.aside-card-container.contact.highlight
         h3 Contact
         div.highlight
             h4 Address
-            h5.right#address Toronto, ON
+            h5.right#address #{basics.location.city}, #{basics.location.region}
             h4 Phone
             h5.right#phone 
-                a(title="Phone number" href='tel:647-906-6194') (647) 906-6194 
+                a(title="Phone number" href='tel:' + basics.phone) #{basics.phone} 
             h4 E-mail
             h5.right#email 
-                a(title="Email" href="mailto:marco@guidotorres.mx") marco@guidotorres.mx
+                a(title="Email" href="mailto:" + basics.email) #{basics.email}
             h4 Linkedin
             h5.right#linkedin 
-                a(title="LinkedIn" href="https://www.linkedin.com/in/guidotorresmx/") /guidotorresmx
+                a(title="LinkedIn" href="https://www.linkedin.com/in/" + basics.profiles[0].username) /#{basics.profiles[0].username}
             h4 Website & Blog
             h5.right#website 
-                a(title="Website" href="https://www.guidotorres.mx/") | guidotorres.mx
+                a(title="Website" href="https://www." + website ) | #{website}
             h5.right#blog 
-                a(title="Blog" href="https://www.guidotorres.mx/blog") | guidotorres.mx/blog
+                a(title="Blog" href="https://www." + website + "/blog") | #{website}/blog
     main.aside-card-container.summary.highlight
         h3 Summary
         div.highlight
-            h5.highlight Enthusiastic developer with strong understanding of Machine Learning and Backend Development. Highly skilled in Python and C++, intermediate in C# and JavaScript. Currently looking for a full-time opportunity as a full-stack developer to elevate technical skills.
+            h5.highlight #{basics.summary.split("*").join("")}
     main.aside-card-container.skills.highlight
         h3 Skills
-        div.highlight
-            h4 Cloud Computing
-            ul.right#cloud-computing 
-                li 
-                    span AWS
-                li 
-                    span Azure
-                li 
-                    span Heroku
-                li 
-                    span Firebase
-                li 
-                    span Linux servers
-        div
-            h4 Programming
-            ul.right#programming 
-                li
-                    h5 Python
-                        ul.is-flex-wrap-wrap
-                            li SciPy 
-                            li Tensorflow 
-                            li Flask 
-                            li SKLearn 
-                            li NLTK 
-                            li Asyncio 
-                            li Numpy 
-                            li Pandas 
-                li 
-                    h5 C#
-                        ul.is-flex-wrap-wrap
-                            li BotFramework
-                            li ASP.NET
-                            li MVC
-                            li LINQ
-                            li .NET CORE
-                li 
-                    h5 JS and TS
-                        ul.is-flex-wrap-wrap 
-                            li React
-                            li Next
-                            li Node
-                            li Express
-                            li Ajax
-                            li Jest 
-                            li Cypress 
-                            li Gulp
-                            li Parcel
-                li 
-                    h5 Extras
-                        ul.is-flex-wrap-wrap 
-                            li c++11
-                            li VHDL
-                            li Git
-                            li Matlab
-                            li Bash
-                            li Postman
-                            li Insomnia
-                            li LabVIEW
-                            li RabbitMQ
-                            li Microservices 
-                            li Rest APIs 
-                            li SOAP
-        div.highlight
-            h4 Database Systems
-            ul.right#database-systems 
-                li 
-                    span PostgreSQL
-                li 
-                    span Redis
-                li
-                    span MongoDB
-                li
-                    span DynamoDB
-                li 
-                    span CosmosDB
-        div.highlight
-            h4 Orchestration
-            ul.right#orchestration 
-                li 
-                    span Kubernetes
-                li
-                    span Helm
-                li
-                    span Docker
-                li
-                    span Airflow
-        div.highlight 
-            h4 Machine Learning
-            ul.right#machine-learning
-                li 
-                    span Forecasting
-                li
-                    span Image Processing
-                li
-                    span Evolutionary Algorithms
+        ul.skills
+            each skill in sections.skills.items
+                li.skill
+                    h4 #{skill.name}
+                    h5 #{skill.level}
 
-
-    main.aside-card-container.soft-skills.highlight
-        h3 Important Skills
-        ul.right.highlight#soft-skills
-            li 
-                span Problem Solver
-            li
-                span Critical Thinker
-            li
-                span Creative
-            li
-                span Resourceful
     main.aside-card-container.interests.highlight
         h3 Interests
         ul.right.highlight#interests
-            li
-                span Machine Learning
-            li
-                span Microservices
-            li
-                span Cloud Computing
+            each interest in sections.interests.items
+                li.interest
+                    h4 #{interest.name}
                 

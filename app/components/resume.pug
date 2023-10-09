@@ -2,71 +2,36 @@ section.column
     article.work-history.article-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Work History
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 10/2019~
-                    time.has-text-grey(datetime='').end-date ~10/2021 
-                div.details
-                    h3 Full Stack Developer <em>| NDS Cognitive Labs, CDMX</em>
-                    ul
-                        li 
-                            span Collaborated on the development of all stages of artificial-intelligence driven chatbots, designed for omnichannel and custom integrations.
-                        li 
-                            span Created and modified multiple CI/CD pipelines in Azure, AWS and on-premise environments.
-                        li 
-                            span Updated and improved preexisting ML solutions, adding new stages to pipelines and improving performance by implementing parallelization and cache-based technologies.
-                        li 
-                            span Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality.
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 04/2015~
-                    time.has-text-grey(datetime='').end-date ~08/2017 
-                div.details
-                    h3 Back-end Developer Junior <em>| Dali, CDMX</em>
-                    ul  
-                        li
-                            span Authored code fixes and enhancements for inclusion in future code releases and patches.
-                        li
-                            span Developed a next-generation integration platform for internal applications.
-                        li
-                            span Used Machine Learning/Deep Learning, other advanced algorithms and made material theories to develop business insights.
+            ul.works
+                each work in sections.work.items
+                    li.work
+                        h4 #{work.name}
+                        .dates
+                            time.start-date #{work.date.start}
+                            span  -
+                            time.end-date #{work.date.end}
+                        ul.summary
+                            each statement in work.summary.split("- ").slice(1)
+                                li.statement #{statement} 
 
     article.education.article-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Education
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 08/2021~
-                    time.has-text-grey(datetime='').end-date ~04/2022 
-                div.details
-                    h3 College Certificate <em>| Web Development and Design | GPA: 3.65 </em>
-                    h4 Humber College — Toronto, ON
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 08/2017~
-                    time.has-text-grey(datetime='').end-date ~08/2019 
-                div.details
-                    h3 Master of Science <em> | Computer Science | GPA: 3.9 </em>
-                    p Emphasis on evolutionary algorithms and recurrent neural networks utilized for large times-series databases forecasting and optimum efficiency frontier for portfolios of multiple financial assets.  
-                    h4 Instituto Politecnico Nacional — CDMX, MX                  
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 08/2012~
-                    time.has-text-grey(datetime='').end-date ~04/2016 
-                div.details
-                    h3 Bachelor of Science <em>| Mechatronics | GPA: 3.65 </em>
-                    h4 Universidad Politecnica de Aguascalientes — AGS, MX                  
+            ul.educations
+                each education in sections.education.items
+                    li.education
+                        .dates
+                            time.start-date #{education.date.start}
+                            span  -
+                            time.end-date #{education.date.end}
+                        h4 #{education.area}
+                        h5 #{education.institution}
 
     article.certifications.article-item-card
         section.content.article-card-content.p-4.pb-5
             h2 Certifications
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 03/2021
-                div.details
-                    h3 Certified MongoDB Developer
-            div.structure
-                div.dates
-                    time.has-text-grey(datetime='').start-date 10/2020
-                div.details
-                    h3 AWS Cloud Practitioner <em> (currently working on DevAsc) </em>
+            ul.certifications
+                each certification in sections.certifications.items
+                    li.certification
+                        h4 #{certification.name}
+                        h5 #{certification.issuer}
